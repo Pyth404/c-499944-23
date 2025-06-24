@@ -1,47 +1,43 @@
+
 import { motion } from "framer-motion";
-import { ReactNode } from "react";
 
 interface FeatureTabProps {
-  icon: ReactNode;
   title: string;
   description: string;
+  icon: React.ReactNode;
   isActive: boolean;
+  badge?: string;
 }
 
-export const FeatureTab = ({ icon, title, description, isActive }: FeatureTabProps) => {
+export const FeatureTab = ({ title, description, icon, isActive, badge }: FeatureTabProps) => {
   return (
-    <div 
-      className={`
-        w-full flex items-center gap-4 p-5 rounded-xl
-        transition-all duration-300 relative
-        ${isActive 
-          ? 'glass shadow-lg shadow-primary/10' 
-          : 'hover:glass-hover'
-        }
-      `}
+    <motion.div
+      className={`w-full p-6 rounded-xl border text-left transition-all duration-300 ${
+        isActive 
+          ? "border-primary bg-primary/5" 
+          : "border-white/10 bg-transparent hover:border-white/20 hover:bg-white/5"
+      }`}
+      whileHover={{ scale: 1.02 }}
+      transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >
-      {isActive && (
-        <motion.div
-          layoutId="activeTab"
-          className="absolute left-0 top-0 w-1 h-full bg-primary rounded-l-xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.2 }}
-        />
-      )}
-      <div className="flex items-center gap-4 min-w-0">
-        <div className={`${isActive ? 'text-primary' : 'text-muted-foreground'}`}>
+      <div className="flex items-start gap-4">
+        <div className={`p-2 rounded-lg ${isActive ? "bg-primary/20" : "bg-white/10"}`}>
           {icon}
         </div>
-        <div className="text-left min-w-0">
-          <h3 className={`font-semibold truncate text-base ${isActive ? 'text-primary' : ''}`}>
-            {title}
-          </h3>
-          <p className="text-sm text-muted-foreground line-clamp-2">
+        <div className="flex-1">
+          <div className="flex items-center gap-2 mb-2">
+            <h3 className="font-medium text-lg">{title}</h3>
+            {badge && (
+              <span className="text-xs font-medium bg-primary/10 text-primary rounded-full px-2 py-1">
+                {badge}
+              </span>
+            )}
+          </div>
+          <p className="text-sm text-muted-foreground leading-relaxed">
             {description}
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
