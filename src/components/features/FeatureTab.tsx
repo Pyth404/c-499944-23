@@ -21,14 +21,14 @@ export const FeatureTab = ({ title, description, icon, isActive, badge }: Featur
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >
       <div className="flex items-start gap-4">
-        <div className={`p-2 rounded-lg ${isActive ? "bg-primary/20" : "bg-white/10"}`}>
+        <div className={`p-2 rounded-lg flex-shrink-0 ${isActive ? "bg-primary/20" : "bg-white/10"}`}>
           {icon}
         </div>
-        <div className="flex-1">
+        <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-2">
             <h3 className="font-medium text-lg">{title}</h3>
             {badge && (
-              <span className="text-xs font-medium bg-primary/10 text-primary rounded-full px-2 py-1">
+              <span className="text-xs font-medium bg-primary/10 text-primary rounded-full px-2 py-1 flex-shrink-0">
                 {badge}
               </span>
             )}

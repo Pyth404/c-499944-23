@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="glass glass-hover rounded-xl p-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <h3 className="font-medium text-lg">ContentAI</h3>
+              <h3 className="font-medium text-lg">Fanplify</h3>
               <p className="text-sm text-muted-foreground">
                 Professional AI content creation for OnlyFans agencies
               </p>
@@ -77,10 +77,10 @@ const Footer = () => {
           <div className="mt-8 pt-8 border-t border-white/10">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-muted-foreground">
-                © {new Date().getFullYear()} ContentAI. All rights reserved.
+                © {new Date().getFullYear()} Fanplify. All rights reserved.
               </p>
               <p className="text-sm text-muted-foreground">
-                Contact: <a href="mailto:hello@contentai.com" className="text-primary hover:underline">hello@contentai.com</a>
+                Contact: <a href="mailto:hello@fanplify.com" className="text-primary hover:underline">hello@fanplify.com</a>
               </p>
             </div>
           </div>

@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, Zap, Users, Camera, Clock, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -5,7 +6,6 @@ import Navigation from "@/components/Navigation";
 import { FeaturesSection } from "@/components/features/FeaturesSection";
 import { PricingSection } from "@/components/pricing/PricingSection";
 import Footer from "@/components/Footer";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 const Index = () => {
   return (
@@ -16,7 +16,7 @@ const Index = () => {
       <motion.section 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.8 }}
         className="relative container px-4 pt-40 pb-20"
       >
         <div 
@@ -35,17 +35,7 @@ const Index = () => {
           </span>
         </motion.div>
         
-        <div className="max-w-4xl relative z-10">
-          <h1 className="text-5xl md:text-7xl font-normal mb-4 tracking-tight text-left">
-            <span className="text-gray-200">
-              <TextGenerateEffect words="AI Content Creation" />
-            </span>
-            <br />
-            <span className="text-white font-medium">
-              <TextGenerateEffect words="for Creators & Agencies" />
-            </span>
-          </h1>
-          
+        <div className="max-w-4xl relative z-10">          
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -88,7 +78,13 @@ const Index = () => {
       </motion.section>
 
       {/* Problems Section */}
-      <section className="container px-4 py-24">
+      <motion.section 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="container px-4 py-24"
+      >
         <div className="max-w-2xl mb-20">
           <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight text-left">
             What's killing your
@@ -102,6 +98,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
             className="glass rounded-xl p-8"
           >
             <Zap className="w-12 h-12 text-red-400 mb-6" />
@@ -115,7 +112,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+            transition={{ delay: 0.2 }}
             className="glass rounded-xl p-8"
           >
             <Users className="w-12 h-12 text-red-400 mb-6" />
@@ -129,7 +126,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.3 }}
             className="glass rounded-xl p-8"
           >
             <Camera className="w-12 h-12 text-red-400 mb-6" />
@@ -139,10 +136,16 @@ const Index = () => {
             </p>
           </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Solution Section */}
-      <section className="container px-4 py-24">
+      <motion.section 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="container px-4 py-24"
+      >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight">
@@ -165,10 +168,16 @@ const Index = () => {
             />
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* How It Works Section */}
-      <section className="container px-4 py-24">
+      <motion.section 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="container px-4 py-24"
+      >
         <div className="max-w-2xl mb-20 text-center mx-auto">
           <h2 className="text-5xl md:text-6xl font-normal mb-6">
             How it <span className="text-gradient font-medium">works</span>
@@ -180,6 +189,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
             className="glass rounded-xl p-8 text-center"
           >
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -195,7 +205,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+            transition={{ delay: 0.2 }}
             className="glass rounded-xl p-8 text-center"
           >
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -211,7 +221,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.3 }}
             className="glass rounded-xl p-8 text-center"
           >
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -223,20 +233,40 @@ const Index = () => {
             </p>
           </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Services Section */}
-      <div id="services" className="bg-black">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        id="services" 
+        className="bg-black"
+      >
         <FeaturesSection />
-      </div>
+      </motion.div>
 
       {/* Pricing Section */}
-      <div id="pricing" className="bg-black">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        id="pricing" 
+        className="bg-black"
+      >
         <PricingSection />
-      </div>
+      </motion.div>
 
       {/* FAQ Section */}
-      <section className="container px-4 py-24">
+      <motion.section 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="container px-4 py-24"
+      >
         <div className="max-w-2xl mb-20 text-center mx-auto">
           <h2 className="text-5xl md:text-6xl font-normal mb-6">
             Frequently Asked <span className="text-gradient font-medium">Questions</span>
@@ -283,10 +313,16 @@ const Index = () => {
             </motion.div>
           ))}
         </div>
-      </section>
+      </motion.section>
 
       {/* CTA Section */}
-      <section className="container px-4 py-20 relative bg-black">
+      <motion.section 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="container px-4 py-20 relative bg-black"
+      >
         <div 
           className="absolute inset-0 opacity-40"
           style={{
@@ -312,7 +348,7 @@ const Index = () => {
             <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </motion.div>
-      </section>
+      </motion.section>
 
       {/* Footer */}
       <div className="bg-black">
