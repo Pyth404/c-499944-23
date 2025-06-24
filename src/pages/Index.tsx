@@ -5,8 +5,6 @@ import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import { FeaturesSection } from "@/components/features/FeaturesSection";
 import { PricingSection } from "@/components/pricing/PricingSection";
-import LogoCarousel from "@/components/LogoCarousel";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
@@ -34,7 +32,7 @@ const Index = () => {
         >
           <span className="text-sm font-medium">
             <Camera className="w-4 h-4 inline-block mr-2" />
-            AI content creation for your OF models
+            AI Content Creation for Creators & Agencies
           </span>
         </motion.div>
         
@@ -89,9 +87,6 @@ const Index = () => {
           </div>
         </motion.div>
       </motion.section>
-
-      {/* Logo Carousel */}
-      <LogoCarousel />
 
       {/* Problems Section */}
       <section className="container px-4 py-24">
@@ -290,11 +285,6 @@ const Index = () => {
           ))}
         </div>
       </section>
-
-      {/* Testimonials Section */}
-      <div className="bg-black">
-        <TestimonialsSection />
-      </div>
 
       {/* CTA Section */}
       <section className="container px-4 py-20 relative bg-black">

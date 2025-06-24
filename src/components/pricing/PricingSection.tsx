@@ -19,11 +19,6 @@ const PricingTier = ({
 }) => (
   <CardSpotlight className={`h-full ${isPopular ? "border-primary" : "border-white/10"} border-2`}>
     <div className="relative h-full p-6 flex flex-col">
-      {isPopular && (
-        <span className="text-xs font-medium bg-primary/10 text-primary rounded-full px-3 py-1 w-fit mb-4">
-          Most Popular
-        </span>
-      )}
       <h3 className="text-xl font-medium mb-2">{name}</h3>
       <div className="mb-4">
         <span className="text-4xl font-bold">{price}</span>

@@ -7,7 +7,7 @@ export const services = [
     description: "Generate unlimited professional content using your models' actual faces. Triple their posting without extra work.",
     icon: <Zap className="w-6 h-6" />,
     image: "/lovable-uploads/c32c6788-5e4a-4fee-afee-604b03113c7f.png",
-    badge: "Favorite"
+    badge: "Most popular"
   },
   {
     title: "Content Recycler",
