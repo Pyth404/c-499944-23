@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, Zap, Users, Camera, Clock, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -23,19 +22,16 @@ const Index = () => {
           className="absolute inset-0 -z-10 bg-[#0A0A0A]"
         />
         
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="inline-block mb-4 px-4 py-1.5 rounded-full glass"
-        >
-          <span className="text-sm font-medium">
-            <Camera className="w-4 h-4 inline-block mr-2" />
+        <div className="max-w-4xl relative z-10">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-6xl md:text-7xl font-bold mb-6 tracking-tight text-left"
+          >
             AI Content Creation for Creators & Agencies
-          </span>
-        </motion.div>
-        
-        <div className="max-w-4xl relative z-10">          
+          </motion.h1>
+          
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

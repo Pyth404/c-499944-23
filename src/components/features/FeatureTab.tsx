@@ -24,16 +24,16 @@ export const FeatureTab = ({ title, description, icon, isActive, badge }: Featur
         <div className={`p-2 rounded-lg flex-shrink-0 ${isActive ? "bg-primary/20" : "bg-white/10"}`}>
           {icon}
         </div>
-        <div className="flex-1 min-w-0">
+        <div className="flex-1 min-w-0 overflow-hidden">
           <div className="flex items-center gap-2 mb-2">
-            <h3 className="font-medium text-lg">{title}</h3>
+            <h3 className="font-medium text-lg truncate">{title}</h3>
             {badge && (
-              <span className="text-xs font-medium bg-primary/10 text-primary rounded-full px-2 py-1 flex-shrink-0">
+              <span className="text-xs font-medium bg-primary/10 text-primary rounded-full px-2 py-1 flex-shrink-0 whitespace-nowrap">
                 {badge}
               </span>
             )}
           </div>
-          <p className="text-sm text-muted-foreground leading-relaxed">
+          <p className="text-sm text-muted-foreground leading-relaxed break-words">
             {description}
           </p>
         </div>

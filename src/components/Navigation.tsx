@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { Command, Menu, Camera } from "lucide-react";
+import { Command, Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
@@ -56,9 +56,8 @@ const Navigation = () => {
     >
       <div className="mx-auto h-full px-6">
         <nav className="flex items-center justify-between h-full">
-          <div className="flex items-center gap-3">
-            <Camera className="w-6 h-6 text-primary" />
-            <span className="font-bold text-2xl">Fanplify</span>
+          <div className="flex items-center">
+            <span className="font-bold text-3xl">Fanplify</span>
           </div>
 
           {/* Desktop Navigation */}
