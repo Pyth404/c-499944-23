@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, Zap, Users, Camera, Clock, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -39,11 +38,11 @@ const Index = () => {
         <div className="max-w-4xl relative z-10">
           <h1 className="text-5xl md:text-7xl font-normal mb-4 tracking-tight text-left">
             <span className="text-gray-200">
-              <TextGenerateEffect words="Generate unlimited" />
+              <TextGenerateEffect words="AI Content Creation" />
             </span>
             <br />
             <span className="text-white font-medium">
-              <TextGenerateEffect words="professional posts" />
+              <TextGenerateEffect words="for Creators & Agencies" />
             </span>
           </h1>
           
