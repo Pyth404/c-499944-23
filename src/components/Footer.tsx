@@ -1,4 +1,3 @@
-
 import { Mail, Shield, FileText } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -80,7 +79,7 @@ const Footer = () => {
                 © {new Date().getFullYear()} Built for Venus. All rights reserved.
               </p>
               <p className="text-sm text-muted-foreground">
-                Contact: <a href="mailto:hello@fanplify.com" className="text-primary hover:underline">hello@fanplify.com</a>
+                Contact: <a href="mailto:hello@builtforvenus.com" className="text-primary hover:underline">hello@builtforvenus.com</a>
               </p>
             </div>
           </div>

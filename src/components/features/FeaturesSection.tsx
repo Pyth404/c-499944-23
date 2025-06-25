@@ -8,13 +8,13 @@ export const FeaturesSection = () => {
   return (
     <section className="container px-4 py-24">
       {/* Header Section */}
-      <div className="max-w-2xl mb-20">
-        <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight text-left">
+      <div className="max-w-2xl mx-auto text-center mb-20">
+        <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight">
           Our
           <br />
           <span className="text-gradient font-medium">Services</span>
         </h2>
-        <p className="text-lg md:text-xl text-gray-400 text-left">
+        <p className="text-lg md:text-xl text-gray-400">
           Professional AI content creation solutions designed for OnlyFans agencies and content creators.
         </p>
       </div>

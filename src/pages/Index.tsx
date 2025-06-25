@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, Zap, Users, Camera, Clock, CheckCircle, Lightbulb, Flame, TrendingDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -39,7 +38,7 @@ const Index = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl text-left"
           >
-            Generate unlimited professional posts.{" "}
+            Generate unlimited professional content.{" "}
             <span className="text-white">Free up your models time to focus on making money.</span>
           </motion.p>
           
@@ -56,7 +55,6 @@ const Index = () => {
               Contact Us <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </motion.div>
-        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -72,6 +70,7 @@ const Index = () => {
             />
           </div>
         </motion.div>
+        </div>
       </motion.section>
 
       {/* Problems Section */}
@@ -82,8 +81,8 @@ const Index = () => {
         transition={{ duration: 0.8 }}
         className="container px-4 py-24"
       >
-        <div className="max-w-2xl mb-20">
-          <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight text-left">
+        <div className="max-w-2xl mx-auto text-center mb-20">
+          <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight">
             What's holding your
             <br />
             <span className="text-gradient font-medium">agency back</span>
@@ -96,7 +95,7 @@ const Index = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="glass rounded-xl p-8"
+            className="glass rounded-xl p-8 text-center"
           >
             <div className="relative w-12 h-12 mb-6">
               <Lightbulb className="w-12 h-12 text-red-400" />
@@ -113,7 +112,7 @@ const Index = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="glass rounded-xl p-8"
+            className="glass rounded-xl p-8 text-center"
           >
             <Flame className="w-12 h-12 text-red-400 mb-6" />
             <h3 className="text-xl font-medium mb-4">Top performers are hitting burnout</h3>
@@ -127,7 +126,7 @@ const Index = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="glass rounded-xl p-8"
+            className="glass rounded-xl p-8 text-center"
           >
             <TrendingDown className="w-12 h-12 text-red-400 mb-6" />
             <h3 className="text-xl font-medium mb-4">Amateur content kills your earnings</h3>
@@ -178,8 +177,8 @@ const Index = () => {
         transition={{ duration: 0.8 }}
         className="container px-4 py-24"
       >
-        <div className="max-w-2xl mb-20">
-          <h2 className="text-5xl md:text-6xl font-normal mb-6 text-left">
+        <div className="max-w-2xl mx-auto text-center mb-20">
+          <h2 className="text-5xl md:text-6xl font-normal mb-6">
             How it <span className="text-gradient font-medium">works</span>
           </h2>
         </div>
@@ -213,7 +212,7 @@ const Index = () => {
             </div>
             <h3 className="text-xl font-medium mb-4">We Generate</h3>
             <p className="text-gray-400">
-              Our AI analyses her features while our creative directors ensure high-quality, authentic appeal.
+              Our AI analyses their features while our creative directors ensure high-quality, authentic appeal.
             </p>
           </motion.div>
 
@@ -229,7 +228,7 @@ const Index = () => {
             </div>
             <h3 className="text-xl font-medium mb-4">You Profit</h3>
             <p className="text-gray-400">
-              Get professional content ready for posts, PPV, and social media.
+              Receive professional content ready for social media and PPV.
             </p>
           </motion.div>
         </div>
@@ -268,29 +267,25 @@ const Index = () => {
         id="faq"
         className="container px-4 py-24"
       >
-        <div className="max-w-2xl mb-20">
-          <h2 className="text-5xl md:text-6xl font-normal mb-6 text-left">
+        <div className="max-w-2xl mx-auto text-center mb-20">
+          <h2 className="text-5xl md:text-6xl font-normal mb-6">
             Frequently Asked <span className="text-gradient font-medium">Questions</span>
           </h2>
         </div>
 
-        <div className="max-w-4xl space-y-6">
+        <div className="max-w-4xl mx-auto space-y-6">
           {[
             {
               question: "What type of content do you create?",
               answer: "We generate all content types to match your models' existing style and audience expectations. Works for OnlyFans, Fanvue, PPV, and social media."
             },
             {
-              question: "How secure are the photos we send you?",
-              answer: "All uploads are encrypted and stored securely. We never share or use your content for other purposes. Complete confidentiality guaranteed."
+              question: "How long does it take to get content?",
+              answer: "Initial training takes 24-48 hours. New content batches delivered within 48 hours."
             },
             {
               question: "Which platforms allow AI content?",
-              answer: "OnlyFans prohibits AI content - models must shoot their own photos. We help with social media content for traffic. Fanvue fully supports AI-generated adult content."
-            },
-            {
-              question: "How long does it take to get content?",
-              answer: "Initial training takes 24-48 hours. New content batches delivered within 48 hours."
+              answer: "All platforms allow AI content. OnlyFans requires KYC verification."
             },
             {
               question: "Do models control what gets posted?",
@@ -306,7 +301,7 @@ const Index = () => {
             },
             {
               question: "What if we're not happy with the quality?",
-              answer: "Two free revisions included, then small fee for additional changes. Full refund if we can't meet your standards."
+              answer: "One free revision included, then small fee for additional changes. Full refund if we can't meet your standards."
             }
           ].map((faq, index) => (
             <motion.div
@@ -344,12 +339,12 @@ const Index = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-[#0A0A0A]/80 backdrop-blur-lg border border-white/10 rounded-2xl p-8 md:p-12 text-left relative z-10"
+          className="bg-[#0A0A0A]/80 backdrop-blur-lg border border-white/10 rounded-2xl p-8 md:p-12 text-center relative z-10"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to scale your agency's content?
           </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Chat with our team about your specific needs. Free consultation, no commitment.
           </p>
           <Button size="lg" className="button-gradient">

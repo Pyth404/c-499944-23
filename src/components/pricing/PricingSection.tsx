@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -76,7 +75,7 @@ export const PricingSection = () => {
         />
         <PricingTier
           name="Adult Images"
-          price="$12"
+          price="$16"
           description="$30 setup fee per model"
           features={[
             "Premium NSFW images",
