@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, Zap, Users, Camera, Clock, CheckCircle, Lightbulb, Flame, TrendingDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -22,12 +23,12 @@ const Index = () => {
           className="absolute inset-0 -z-10 bg-[#0A0A0A]"
         />
         
-        <div className="max-w-4xl relative z-10">
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-6xl md:text-7xl font-normal mb-6 tracking-tight text-left"
+            className="text-6xl md:text-7xl font-normal mb-6 tracking-tight"
           >
             AI Content Creation for OF Creators & Agencies
           </motion.h1>
@@ -36,7 +37,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl text-left"
+            className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto"
           >
             Generate unlimited professional content.{" "}
             <span className="text-white">Free up your models time to focus on making money.</span>
@@ -46,7 +47,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="flex flex-col sm:flex-row gap-4 items-start"
+            className="flex flex-col sm:flex-row gap-4 items-center justify-center"
           >
             <Button size="lg" className="button-gradient">
               Get Free Consultation
@@ -62,11 +63,11 @@ const Index = () => {
           transition={{ delay: 0.6 }}
           className="relative mx-auto max-w-5xl mt-20"
         >
-          <div className="glass rounded-xl overflow-hidden">
+          <div className="glass rounded-xl overflow-hidden mx-auto">
             <img
               src="/lovable-uploads/c32c6788-5e4a-4fee-afee-604b03113c7f.png"
               alt="AI Content Creation Dashboard"
-              className="w-full h-auto"
+              className="w-full h-auto mx-auto"
             />
           </div>
         </motion.div>
@@ -89,7 +90,7 @@ const Index = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -97,9 +98,11 @@ const Index = () => {
             transition={{ delay: 0.1 }}
             className="glass rounded-xl p-8 text-center"
           >
-            <div className="relative w-12 h-12 mb-6">
-              <Lightbulb className="w-12 h-12 text-red-400" />
-              <div className="absolute inset-0 w-full h-0.5 bg-red-400 top-1/2 rotate-45"></div>
+            <div className="flex justify-center mb-6">
+              <div className="relative w-12 h-12">
+                <Lightbulb className="w-12 h-12 text-red-400" />
+                <div className="absolute inset-0 w-full h-0.5 bg-red-400 top-1/2 rotate-45"></div>
+              </div>
             </div>
             <h3 className="text-xl font-medium mb-4">Your models hit creative walls quickly</h3>
             <p className="text-gray-400">
@@ -114,7 +117,9 @@ const Index = () => {
             transition={{ delay: 0.2 }}
             className="glass rounded-xl p-8 text-center"
           >
-            <Flame className="w-12 h-12 text-red-400 mb-6" />
+            <div className="flex justify-center mb-6">
+              <Flame className="w-12 h-12 text-red-400" />
+            </div>
             <h3 className="text-xl font-medium mb-4">Top performers are hitting burnout</h3>
             <p className="text-gray-400">
               Constant content creation is exhausting your highest earners and killing motivation.
@@ -128,7 +133,9 @@ const Index = () => {
             transition={{ delay: 0.3 }}
             className="glass rounded-xl p-8 text-center"
           >
-            <TrendingDown className="w-12 h-12 text-red-400 mb-6" />
+            <div className="flex justify-center mb-6">
+              <TrendingDown className="w-12 h-12 text-red-400" />
+            </div>
             <h3 className="text-xl font-medium mb-4">Amateur content kills your earnings</h3>
             <p className="text-gray-400">
               Photography skills vary wildly. Poor quality affects your bottom line.
@@ -183,7 +190,7 @@ const Index = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

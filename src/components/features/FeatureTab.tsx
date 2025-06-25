@@ -12,7 +12,7 @@ interface FeatureTabProps {
 export const FeatureTab = ({ title, description, icon, isActive, badge }: FeatureTabProps) => {
   return (
     <motion.div
-      className={`w-full p-6 rounded-xl border text-left transition-all duration-300 flex flex-col ${
+      className={`w-full p-6 rounded-xl border text-left transition-all duration-300 flex flex-col min-h-[140px] ${
         isActive 
           ? "border-primary bg-primary/5" 
           : "border-white/10 bg-transparent hover:border-white/20 hover:bg-white/5"
@@ -25,7 +25,7 @@ export const FeatureTab = ({ title, description, icon, isActive, badge }: Featur
           {icon}
         </div>
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2 mb-2 flex-wrap">
+          <div className="flex items-center gap-2 mb-3 flex-wrap">
             <h3 className="font-medium text-lg">{title}</h3>
             {badge && (
               <span className="text-xs font-medium bg-primary/10 text-primary rounded-full px-2 py-1 flex-shrink-0 whitespace-nowrap">

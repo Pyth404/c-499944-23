@@ -1,4 +1,5 @@
-import { Mail, Shield, FileText } from "lucide-react";
+
+import { Shield, FileText } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Footer = () => {
@@ -12,11 +13,6 @@ const Footer = () => {
               <p className="text-sm text-muted-foreground">
                 Professional AI content creation for OnlyFans creators and agencies
               </p>
-              <div className="flex space-x-4">
-                <Button variant="ghost" size="icon">
-                  <Mail className="w-4 h-4" />
-                </Button>
-              </div>
             </div>
 
             <div className="space-y-4">
