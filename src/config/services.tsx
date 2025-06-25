@@ -10,8 +10,8 @@ export const services = [
     badge: "Most popular"
   },
   {
-    title: "Content Recycler",
-    description: "Turn your models' best content into new revenue streams. Apply fresh faces to proven high-performing content.",
+    title: "Content Repurposer",
+    description: "Turn your models' best content into new revenue streams. Build a new brand by applying fresh faces to proven high-performing content.",
     icon: <RefreshCw className="w-6 h-6" />,
     image: "/lovable-uploads/21f3edfb-62b5-4e35-9d03-7339d803b980.png"
   },

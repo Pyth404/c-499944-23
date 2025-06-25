@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="glass glass-hover rounded-xl p-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <h3 className="font-medium text-lg">Fanplify</h3>
+              <h3 className="font-medium text-lg">Built for Venus</h3>
               <p className="text-sm text-muted-foreground">
-                Professional AI content creation for OnlyFans agencies
+                Professional AI content creation for OnlyFans creators and agencies
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="icon">
@@ -30,7 +30,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Content Recycler
+                    Content Repurposer
                   </a>
                 </li>
                 <li>
@@ -77,7 +77,7 @@ const Footer = () => {
           <div className="mt-8 pt-8 border-t border-white/10">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-sm text-muted-foreground">
-                © {new Date().getFullYear()} Fanplify. All rights reserved.
+                © {new Date().getFullYear()} Built for Venus. All rights reserved.
               </p>
               <p className="text-sm text-muted-foreground">
                 Contact: <a href="mailto:hello@fanplify.com" className="text-primary hover:underline">hello@fanplify.com</a>

@@ -17,7 +17,7 @@ const PricingTier = ({
   features: string[];
   isPopular?: boolean;
 }) => (
-  <CardSpotlight className={`h-full ${isPopular ? "border-primary" : "border-white/10"} border-2`}>
+  <CardSpotlight className={`h-full ${isPopular ? "border-white/10" : "border-white/10"} border-2`}>
     <div className="relative h-full p-6 flex flex-col">
       <h3 className="text-xl font-medium mb-2">{name}</h3>
       <div className="mb-4">
@@ -65,26 +65,22 @@ export const PricingSection = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <PricingTier
-          name="SFW Images"
+          name="Social Media Images"
           price="$8"
-          description="Safe for work content generation"
+          description="$30 setup fee per model"
           features={[
-            "$30 training fee",
             "High-quality SFW images",
             "24-48 hour delivery",
-            "Full commercial rights",
             "Bulk discounts for 50+ images"
           ]}
         />
         <PricingTier
-          name="NSFW Images"
+          name="Adult Images"
           price="$12"
-          description="Adult content generation"
+          description="$30 setup fee per model"
           features={[
-            "$30 training fee",
             "Premium NSFW images",
             "24-48 hour delivery",
-            "Full commercial rights",
             "Bulk discounts for 50+ images"
           ]}
           isPopular
@@ -92,12 +88,10 @@ export const PricingSection = () => {
         <PricingTier
           name="Video Content"
           price="Custom"
-          description="Video generation with personalised pricing"
+          description="Custom setup fee"
           features={[
-            "Training included",
             "Professional video generation",
             "Custom timelines",
-            "Full commercial rights",
             "Volume discounts available"
           ]}
         />

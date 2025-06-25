@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, Zap, Users, Camera, Clock, CheckCircle, Lightbulb, Flame, TrendingDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -177,8 +178,8 @@ const Index = () => {
         transition={{ duration: 0.8 }}
         className="container px-4 py-24"
       >
-        <div className="max-w-2xl mb-20 text-center mx-auto">
-          <h2 className="text-5xl md:text-6xl font-normal mb-6">
+        <div className="max-w-2xl mb-20">
+          <h2 className="text-5xl md:text-6xl font-normal mb-6 text-left">
             How it <span className="text-gradient font-medium">works</span>
           </h2>
         </div>
@@ -212,7 +213,7 @@ const Index = () => {
             </div>
             <h3 className="text-xl font-medium mb-4">We Generate</h3>
             <p className="text-gray-400">
-              Our AI analyses her features while our creative directors ensure high-quality, authentic appeal. Models approve all content before delivery.
+              Our AI analyses her features while our creative directors ensure high-quality, authentic appeal.
             </p>
           </motion.div>
 
@@ -267,13 +268,13 @@ const Index = () => {
         id="faq"
         className="container px-4 py-24"
       >
-        <div className="max-w-2xl mb-20 text-center mx-auto">
-          <h2 className="text-5xl md:text-6xl font-normal mb-6">
+        <div className="max-w-2xl mb-20">
+          <h2 className="text-5xl md:text-6xl font-normal mb-6 text-left">
             Frequently Asked <span className="text-gradient font-medium">Questions</span>
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto space-y-6">
+        <div className="max-w-4xl space-y-6">
           {[
             {
               question: "What type of content do you create?",
@@ -282,6 +283,10 @@ const Index = () => {
             {
               question: "How secure are the photos we send you?",
               answer: "All uploads are encrypted and stored securely. We never share or use your content for other purposes. Complete confidentiality guaranteed."
+            },
+            {
+              question: "Which platforms allow AI content?",
+              answer: "OnlyFans prohibits AI content - models must shoot their own photos. We help with social media content for traffic. Fanvue fully supports AI-generated adult content."
             },
             {
               question: "How long does it take to get content?",
@@ -339,12 +344,12 @@ const Index = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-[#0A0A0A]/80 backdrop-blur-lg border border-white/10 rounded-2xl p-8 md:p-12 text-center relative z-10"
+          className="bg-[#0A0A0A]/80 backdrop-blur-lg border border-white/10 rounded-2xl p-8 md:p-12 text-left relative z-10"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to transform your agency's content?
+            Ready to scale your agency's content?
           </h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
             Chat with our team about your specific needs. Free consultation, no commitment.
           </p>
           <Button size="lg" className="button-gradient">
