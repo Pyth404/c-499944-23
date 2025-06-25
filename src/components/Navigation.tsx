@@ -57,7 +57,7 @@ const Navigation = () => {
       <div className="mx-auto h-full px-6">
         <nav className="flex items-center justify-between h-full">
           <div className="flex items-center">
-            <span className="font-bold text-3xl">Fanplify</span>
+            <span className="font-bold text-2xl">Fanplify</span>
           </div>
 
           {/* Desktop Navigation */}

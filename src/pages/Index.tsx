@@ -1,5 +1,6 @@
+
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, Zap, Users, Camera, Clock, CheckCircle } from "lucide-react";
+import { ArrowRight, Shield, Zap, Users, Camera, Clock, CheckCircle, Lightbulb, Fire, TrendingDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import { FeaturesSection } from "@/components/features/FeaturesSection";
@@ -27,9 +28,9 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-6xl md:text-7xl font-bold mb-6 tracking-tight text-left"
+            className="text-6xl md:text-7xl font-normal mb-6 tracking-tight text-left"
           >
-            AI Content Creation for Creators & Agencies
+            AI Content Creation for OF Creators & Agencies
           </motion.h1>
           
           <motion.p 
@@ -38,8 +39,8 @@ const Index = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl text-left"
           >
-            Free up your models time to focus on making money.{" "}
-            <span className="text-white">Turn existing photos into unlimited content.</span>
+            Generate unlimited professional posts.{" "}
+            <span className="text-white">Free up your models time to focus on making money.</span>
           </motion.p>
           
           <motion.div
@@ -83,9 +84,9 @@ const Index = () => {
       >
         <div className="max-w-2xl mb-20">
           <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight text-left">
-            What's killing your
+            What's holding your
             <br />
-            <span className="text-gradient font-medium">agency's revenue</span>
+            <span className="text-gradient font-medium">agency back</span>
           </h2>
         </div>
 
@@ -97,10 +98,13 @@ const Index = () => {
             transition={{ delay: 0.1 }}
             className="glass rounded-xl p-8"
           >
-            <Zap className="w-12 h-12 text-red-400 mb-6" />
-            <h3 className="text-xl font-medium mb-4">Fresh ideas are impossible daily</h3>
+            <div className="relative w-12 h-12 mb-6">
+              <Lightbulb className="w-12 h-12 text-red-400" />
+              <div className="absolute inset-0 w-full h-0.5 bg-red-400 top-1/2 rotate-45"></div>
+            </div>
+            <h3 className="text-xl font-medium mb-4">Your models hit creative walls quickly</h3>
             <p className="text-gray-400">
-              Your girls exhaust new ideas within weeks. Repetitive content kills your earnings.
+              After weeks, they're repeating the same poses. Fresh ideas become impossible.
             </p>
           </motion.div>
 
@@ -111,10 +115,10 @@ const Index = () => {
             transition={{ delay: 0.2 }}
             className="glass rounded-xl p-8"
           >
-            <Users className="w-12 h-12 text-red-400 mb-6" />
-            <h3 className="text-xl font-medium mb-4">Content demands burn out your top earners</h3>
+            <Fire className="w-12 h-12 text-red-400 mb-6" />
+            <h3 className="text-xl font-medium mb-4">Top performers are hitting burnout</h3>
             <p className="text-gray-400">
-              Models feel constant pressure to create new content. The stress of daily posting demands is wearing them down.
+              Constant content creation is exhausting your highest earners and killing motivation.
             </p>
           </motion.div>
 
@@ -125,10 +129,10 @@ const Index = () => {
             transition={{ delay: 0.3 }}
             className="glass rounded-xl p-8"
           >
-            <Camera className="w-12 h-12 text-red-400 mb-6" />
+            <TrendingDown className="w-12 h-12 text-red-400 mb-6" />
             <h3 className="text-xl font-medium mb-4">Amateur content kills your earnings</h3>
             <p className="text-gray-400">
-              DIY content can't compete with professional-looking posts. Quality affects your bottom line.
+              Photography skills vary wildly. Poor quality affects your bottom line.
             </p>
           </motion.div>
         </div>
@@ -191,7 +195,7 @@ const Index = () => {
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <span className="text-2xl font-bold text-primary">1</span>
             </div>
-            <h3 className="text-xl font-medium mb-4">You send photos</h3>
+            <h3 className="text-xl font-medium mb-4">You Upload</h3>
             <p className="text-gray-400">
               Send us 10-20 high-quality photos of each model. Secure, encrypted, and confidential.
             </p>
@@ -207,9 +211,9 @@ const Index = () => {
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <span className="text-2xl font-bold text-primary">2</span>
             </div>
-            <h3 className="text-xl font-medium mb-4">We craft premium content</h3>
+            <h3 className="text-xl font-medium mb-4">We Generate</h3>
             <p className="text-gray-400">
-              Our AI analyses her features while our creative directors ensure high-quality, authentic appeal.
+              Our AI analyses her features while our creative directors ensure high-quality, authentic appeal. Models approve all content before delivery.
             </p>
           </motion.div>
 
@@ -223,7 +227,7 @@ const Index = () => {
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <span className="text-2xl font-bold text-primary">3</span>
             </div>
-            <h3 className="text-xl font-medium mb-4">You receive professional content</h3>
+            <h3 className="text-xl font-medium mb-4">You Profit</h3>
             <p className="text-gray-400">
               Get professional content ready for posts, PPV, and social media.
             </p>
@@ -261,6 +265,7 @@ const Index = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
+        id="faq"
         className="container px-4 py-24"
       >
         <div className="max-w-2xl mb-20 text-center mx-auto">
@@ -272,28 +277,32 @@ const Index = () => {
         <div className="max-w-4xl mx-auto space-y-6">
           {[
             {
-              question: "How much does this cost?",
-              answer: "$30 one-time training fee per creator, then per-image pricing: SFW from $8, NSFW from $12. Bulk discounts for 50+ images."
-            },
-            {
-              question: "Do I own the content?",
-              answer: "Yes, you own all generated content with full commercial rights included."
-            },
-            {
               question: "What type of content do you create?",
               answer: "We generate all content types to match your models' existing style and audience expectations. Works for OnlyFans, Fanvue, PPV, and social media."
             },
             {
-              question: "Can't I just do this myself with AI tools?",
-              answer: "Basic AI tools exist, but professional results require specialised training and art direction. Our creative directors ensure studio-quality aesthetics that convert to sales."
+              question: "How secure are the photos we send you?",
+              answer: "All uploads are encrypted and stored securely. We never share or use your content for other purposes. Complete confidentiality guaranteed."
+            },
+            {
+              question: "How long does it take to get content?",
+              answer: "Initial training takes 24-48 hours. New content batches delivered within 48 hours."
+            },
+            {
+              question: "Do models control what gets posted?",
+              answer: "Model consent is absolutely essential. Models choose manual review and approval of each piece, or can grant their agency full management authority. The choice always remains with the model."
             },
             {
               question: "Can fans tell it's AI-generated?",
               answer: "We run quality checks to maximise realism. Eagle-eyed viewers may notice, but most fans cannot distinguish our work from real photos."
             },
             {
-              question: "How long does it take to get content?",
-              answer: "Initial AI training takes 24-48 hours. After that, new content batches are delivered within 48 hours."
+              question: "Can't I just do this myself with AI tools?",
+              answer: "Basic AI tools exist, but professional results require specialised training and art direction. Our creative directors ensure studio-quality aesthetics that convert."
+            },
+            {
+              question: "What if we're not happy with the quality?",
+              answer: "Two free revisions included, then small fee for additional changes. Full refund if we can't meet your standards."
             }
           ].map((faq, index) => (
             <motion.div

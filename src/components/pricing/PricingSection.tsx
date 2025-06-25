@@ -65,42 +65,40 @@ export const PricingSection = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <PricingTier
-          name="SFW Content"
+          name="SFW Images"
           price="$8"
           description="Safe for work content generation"
           features={[
-            "$30 one-time training fee",
+            "$30 training fee",
             "High-quality SFW images",
             "24-48 hour delivery",
-            "Commercial rights included",
-            "Bulk discounts available"
+            "Full commercial rights",
+            "Bulk discounts for 50+ images"
           ]}
         />
         <PricingTier
-          name="NSFW Content"
+          name="NSFW Images"
           price="$12"
           description="Adult content generation"
           features={[
-            "$30 one-time training fee",
+            "$30 training fee",
             "Premium NSFW images",
             "24-48 hour delivery",
             "Full commercial rights",
-            "Bulk discounts for 50+ images",
-            "Priority processing"
+            "Bulk discounts for 50+ images"
           ]}
           isPopular
         />
         <PricingTier
-          name="Enterprise"
+          name="Video Content"
           price="Custom"
-          description="Large volume discounts and custom solutions"
+          description="Video generation with personalised pricing"
           features={[
-            "Volume-based pricing",
-            "Custom AI model training",
-            "Dedicated account manager",
-            "Priority support",
-            "Custom workflows",
-            "API access"
+            "Training included",
+            "Professional video generation",
+            "Custom timelines",
+            "Full commercial rights",
+            "Volume discounts available"
           ]}
         />
       </div>
