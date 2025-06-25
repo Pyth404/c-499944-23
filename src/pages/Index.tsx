@@ -1,6 +1,5 @@
-
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, Zap, Users, Camera, Clock, CheckCircle, Lightbulb, Fire, TrendingDown } from "lucide-react";
+import { ArrowRight, Shield, Zap, Users, Camera, Clock, CheckCircle, Lightbulb, Flame, TrendingDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import { FeaturesSection } from "@/components/features/FeaturesSection";
@@ -115,7 +114,7 @@ const Index = () => {
             transition={{ delay: 0.2 }}
             className="glass rounded-xl p-8"
           >
-            <Fire className="w-12 h-12 text-red-400 mb-6" />
+            <Flame className="w-12 h-12 text-red-400 mb-6" />
             <h3 className="text-xl font-medium mb-4">Top performers are hitting burnout</h3>
             <p className="text-gray-400">
               Constant content creation is exhausting your highest earners and killing motivation.
