@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { ArrowRight, Shield, Zap, Users, Camera, Clock, CheckCircle, Lightbulb, Flame, TrendingDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -52,9 +51,15 @@ const Index = () => {
             <Button size="lg" className="button-gradient">
               Get Free Consultation
             </Button>
-            <Button size="lg" variant="link" className="text-white">
+            <a
+              href="https://tally.so/r/3jrZXR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white inline-flex items-center text-lg font-medium underline hover:text-primary transition-colors"
+              style={{ minHeight: '2.5rem', padding: '0.5rem 1.5rem' }}
+            >
               Contact Us <ArrowRight className="ml-2 w-4 h-4" />
-            </Button>
+            </a>
           </motion.div>
 
         <motion.div
@@ -168,7 +173,7 @@ const Index = () => {
           </div>
           <div className="glass rounded-xl overflow-hidden">
             <img
-              src="/lovable-uploads/21f3edfb-62b5-4e35-9d03-7339d803b980.png"
+              src="/lovable-uploads/Content Multiplier.png"
               alt="Content transformation example"
               className="w-full h-auto"
             />
@@ -281,48 +286,50 @@ const Index = () => {
         </div>
 
         <div className="max-w-4xl mx-auto space-y-6">
-          {[
-            {
-              question: "What type of content do you create?",
-              answer: "We generate all content types to match your models' existing style and audience expectations. Works for OnlyFans, Fanvue, PPV, and social media."
-            },
-            {
-              question: "How long does it take to get content?",
-              answer: "Initial training takes 24-48 hours. New content batches delivered within 48 hours."
-            },
-            {
-              question: "Which platforms allow AI content?",
-              answer: "All platforms allow AI content. OnlyFans requires KYC verification."
-            },
-            {
-              question: "Do models control what gets posted?",
-              answer: "Model consent is absolutely essential. Models choose manual review and approval of each piece, or can grant their agency full management authority. The choice always remains with the model."
-            },
-            {
-              question: "Can fans tell it's AI-generated?",
-              answer: "We run quality checks to maximise realism. Eagle-eyed viewers may notice, but most fans cannot distinguish our work from real photos."
-            },
-            {
-              question: "Can't I just do this myself with AI tools?",
-              answer: "Basic AI tools exist, but professional results require specialised training and art direction. Our creative directors ensure studio-quality aesthetics that convert."
-            },
-            {
-              question: "What if we're not happy with the quality?",
-              answer: "One free revision included, then small fee for additional changes. Full refund if we can't meet your standards."
-            }
-          ].map((faq, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="glass rounded-xl p-6"
-            >
-              <h3 className="text-lg font-medium mb-3">{faq.question}</h3>
-              <p className="text-gray-400">{faq.answer}</p>
-            </motion.div>
-          ))}
+          <div className="mx-auto space-y-6 w-full" style={{ maxWidth: '70ch' }}>
+            {[
+              {
+                question: "What type of content do you create?",
+                answer: "We generate all content types to match your models' existing style and audience expectations. Works for OnlyFans, Fanvue, PPV, and social media."
+              },
+              {
+                question: "How long does it take to get content?",
+                answer: "Initial training takes 24-48 hours. New content batches delivered within 48 hours."
+              },
+              {
+                question: "Which platforms allow AI content?",
+                answer: "All platforms allow AI content. OnlyFans requires KYC verification."
+              },
+              {
+                question: "Do models control what gets posted?",
+                answer: "Model consent is absolutely essential. Models choose manual review and approval of each piece, or can grant their agency full management authority. The choice always remains with the model."
+              },
+              {
+                question: "Can fans tell it's AI-generated?",
+                answer: "We run quality checks to maximise realism. Eagle-eyed viewers may notice, but most fans cannot distinguish our work from real photos."
+              },
+              {
+                question: "Can't I just do this myself with AI tools?",
+                answer: "Basic AI tools exist, but professional results require specialised training and art direction. Our creative directors ensure studio-quality aesthetics that convert."
+              },
+              {
+                question: "What if we're not happy with the quality?",
+                answer: "One free revision included, then small fee for additional changes. Full refund if we can't meet your standards."
+              }
+            ].map((faq, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="glass rounded-xl p-6"
+              >
+                <h3 className="text-lg font-medium mb-3">{faq.question}</h3>
+                <p className="text-gray-400">{faq.answer}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </motion.section>
 
