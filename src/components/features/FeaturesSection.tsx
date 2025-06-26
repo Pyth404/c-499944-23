@@ -1,4 +1,3 @@
-
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { FeatureTab } from "./FeatureTab";
 import { FeatureContent } from "./FeatureContent";
@@ -10,7 +9,8 @@ export const FeaturesSection = () => {
       {/* Header Section */}
       <div className="max-w-2xl mx-auto text-center mb-20">
         <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight">
-          <span className="text-gradient font-medium">Our Services</span>
+          <span className="text-white font-medium">Our </span>
+          <span className="text-gradient font-medium">Services</span>
         </h2>
         <p className="text-lg md:text-xl text-gray-400">
           Professional AI content creation solutions designed for OnlyFans agencies and content creators.
