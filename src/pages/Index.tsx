@@ -48,9 +48,15 @@ const Index = () => {
             transition={{ delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 items-center justify-center"
           >
-            <Button size="lg" className="button-gradient">
+            <a
+              href="https://calendly.com/johnsmith1234234234/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-gradient inline-flex items-center justify-center px-8 h-11 rounded-full text-sm font-medium transition-all duration-200 ease-in-out bg-gradient-to-r from-primary to-[#5ba7ff] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/40"
+              style={{ minHeight: '2.75rem' }}
+            >
               Get Free Consultation
-            </Button>
+            </a>
             <a
               href="https://tally.so/r/3jrZXR"
               target="_blank"
@@ -168,9 +174,15 @@ const Index = () => {
             <p className="text-lg text-gray-200 mb-8">
               Same faces, better results. Give your models the choice to focus on what they want.
             </p>
-            <Button className="button-gradient">
-              Get Started Today
-            </Button>
+            <a
+              href="https://calendly.com/johnsmith1234234234/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button-gradient inline-flex items-center justify-center px-8 h-11 rounded-full text-sm font-medium transition-all duration-200 ease-in-out bg-gradient-to-r from-primary to-[#5ba7ff] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/40"
+              style={{ minHeight: '2.75rem' }}
+            >
+              Get Free Consultation
+            </a>
           </div>
           <div className="rounded-xl overflow-hidden mx-auto w-full max-w-2xl">
             <img
@@ -367,9 +379,15 @@ const Index = () => {
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
             Chat with our team about your specific needs. Free consultation, no commitment.
           </p>
-          <Button size="lg" className="button-gradient">
+          <a
+            href="https://calendly.com/johnsmith1234234234/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button-gradient inline-flex items-center justify-center px-8 h-11 rounded-full text-sm font-medium transition-all duration-200 ease-in-out bg-gradient-to-r from-primary to-[#5ba7ff] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/40"
+            style={{ minHeight: '2.75rem' }}
+          >
             Get Free Consultation
-          </Button>
+          </a>
         </motion.div>
       </motion.section>
 
