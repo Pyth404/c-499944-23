@@ -11,7 +11,7 @@ interface FeatureTabProps {
 export const FeatureTab = ({ title, description, icon, isActive, badge }: FeatureTabProps) => {
   return (
     <motion.div
-      className={`w-full p-6 rounded-xl border text-left transition-all duration-300 flex flex-row items-start min-h-[140px] ${
+      className={`w-full p-6 rounded-xl border text-left transition-all duration-300 transition-transform duration-300 ease-out flex flex-row items-start min-h-[140px] ${
         isActive 
           ? "border-primary bg-primary/5" 
           : "border-white/10 bg-transparent hover:border-white/20 hover:bg-white/5"

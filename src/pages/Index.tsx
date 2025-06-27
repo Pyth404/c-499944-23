@@ -36,7 +36,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-gray-200 mb-8 max-w-xl mx-auto"
           >
             Generate unlimited professional content.{" "}
             <span className="text-white">Free up your models time to focus on making money.</span>
@@ -55,10 +55,13 @@ const Index = () => {
               href="https://tally.so/r/3jrZXR"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white inline-flex items-center text-lg font-medium underline hover:text-primary transition-colors"
-              style={{ minHeight: '2.5rem', padding: '0.5rem 1.5rem' }}
+              className="inline-flex items-center justify-center h-11 px-8 rounded-full border border-white text-sm font-medium transition-all duration-200 ease-in-out bg-transparent hover:bg-white/10 active:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/40 ml-0 sm:ml-0"
+              style={{ minHeight: '2.75rem' }}
+              onMouseDown={e => e.currentTarget.style.transform = 'scale(0.98)'}
+              onMouseUp={e => e.currentTarget.style.transform = 'scale(1)'}
+              onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
             >
-              Contact Us <ArrowRight className="ml-2 w-4 h-4" />
+              Contact Us
             </a>
           </motion.div>
 
@@ -158,7 +161,7 @@ const Index = () => {
         className="container px-4 py-24"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
+          <div className="text-center lg:text-left w-full">
             <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight">
               Turn existing photos into
               <br />
@@ -171,9 +174,9 @@ const Index = () => {
               Get Started Today
             </Button>
           </div>
-          <div className="glass rounded-xl overflow-hidden">
+          <div className="rounded-xl overflow-hidden mx-auto w-full max-w-2xl">
             <img
-              src="/lovable-uploads/Content Multiplier.png"
+              src="/lovable-uploads/Content Multiplier.jpg"
               alt="Content transformation example"
               className="w-full h-auto"
             />
@@ -208,7 +211,7 @@ const Index = () => {
             </div>
             <h3 className="text-xl font-medium mb-4">You Upload</h3>
             <p className="text-gray-400">
-              Send us 10-20 high-quality photos of each model. Secure, encrypted, and confidential.
+              Send us 10-20 high-quality photos of each model.
             </p>
           </motion.div>
 
@@ -286,7 +289,7 @@ const Index = () => {
         </div>
 
         <div className="max-w-4xl mx-auto space-y-6">
-          <div className="mx-auto space-y-6 w-full" style={{ maxWidth: '70ch' }}>
+          <div className="mx-auto space-y-6 w-full" style={{ maxWidth: '55ch' }}>
             {[
               {
                 question: "What type of content do you create?",
@@ -363,7 +366,6 @@ const Index = () => {
           </p>
           <Button size="lg" className="button-gradient">
             Get Free Consultation
-            <ArrowRight className="ml-2 w-4 h-4" />
           </Button>
         </motion.div>
       </motion.section>

@@ -1,4 +1,3 @@
-
 import { Shield, FileText } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -19,17 +18,17 @@ const Footer = () => {
               <h4 className="font-medium">Services</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#services" className="text-sm text-muted-foreground hover:text-gray-300 active:text-gray-200 transition-colors">
                     Content Multiplier
                   </a>
                 </li>
                 <li>
-                  <a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#services" className="text-sm text-muted-foreground hover:text-gray-300 active:text-gray-200 transition-colors">
                     Content Repurposer
                   </a>
                 </li>
                 <li>
-                  <a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#services" className="text-sm text-muted-foreground hover:text-gray-300 active:text-gray-200 transition-colors">
                     Privacy Shield
                   </a>
                 </li>
@@ -40,12 +39,12 @@ const Footer = () => {
               <h4 className="font-medium">Support</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#" className="text-sm text-muted-foreground hover:text-gray-300 active:text-gray-200 transition-colors">
                     Get Free Consultation
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#" className="text-sm text-muted-foreground hover:text-gray-300 active:text-gray-200 transition-colors">
                     Contact Support
                   </a>
                 </li>
@@ -56,12 +55,12 @@ const Footer = () => {
               <h4 className="font-medium">Legal</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#" className="text-sm text-muted-foreground hover:text-gray-300 active:text-gray-200 transition-colors">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="#" className="text-sm text-muted-foreground hover:text-gray-300 active:text-gray-200 transition-colors">
                     Terms of Service
                   </a>
                 </li>
