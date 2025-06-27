@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface FeatureTabProps {
   title: string;
@@ -43,6 +45,13 @@ export const FeatureTab = ({ title, description, icon, isActive, badge }: Featur
         >
           {description}
         </p>
+        <button
+          type="button"
+          className="mt-4 px-0 text-sm text-muted-foreground hover:text-white transition-colors duration-200 font-medium text-left w-auto flex items-center gap-1 group"
+        >
+          <span>View details</span>
+          <ArrowRight className="w-4 h-4 transition-colors duration-200 group-hover:text-white text-inherit" />
+        </button>
       </div>
     </motion.div>
   );

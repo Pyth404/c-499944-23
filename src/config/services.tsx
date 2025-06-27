@@ -11,7 +11,10 @@ export const services = [
     title: "Content Multiplier",
     description: "Generate unlimited professional content using your models' actual faces. Triple their posting without extra work.",
     icon: <Zap className="w-6 h-6" />,
-    image: "/lovable-uploads/Content Multiplier.jpg",
+    image: {
+      mobile: "/lovable-uploads/Content Multiplier-mobile.jpg",
+      desktop: "/lovable-uploads/Content Multiplier.jpg"
+    },
     badge: "Most popular"
   },
   {

@@ -92,9 +92,7 @@ const Index = () => {
       >
         <div className="max-w-2xl mx-auto text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight">
-            What's holding your
-            <br />
-            <span className="text-gradient font-medium">agency back</span>
+            What's holding your <span className="text-gradient font-medium">agency back</span>
           </h2>
         </div>
 
@@ -167,7 +165,7 @@ const Index = () => {
               <br />
               <span className="text-gradient font-medium">unlimited content</span>
             </h2>
-            <p className="text-lg text-gray-400 mb-8">
+            <p className="text-lg text-gray-200 mb-8">
               Same faces, better results. Give your models the choice to focus on what they want.
             </p>
             <Button className="button-gradient">
@@ -176,9 +174,14 @@ const Index = () => {
           </div>
           <div className="rounded-xl overflow-hidden mx-auto w-full max-w-2xl">
             <img
+              src="/lovable-uploads/Content Multiplier-mobile.jpg"
+              alt="Content transformation example"
+              className="w-full h-auto block sm:hidden"
+            />
+            <img
               src="/lovable-uploads/Content Multiplier.jpg"
               alt="Content transformation example"
-              className="w-full h-auto"
+              className="w-full h-auto hidden sm:block"
             />
           </div>
         </div>
