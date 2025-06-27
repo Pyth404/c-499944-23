@@ -32,9 +32,15 @@ const PricingTier = ({
           </li>
         ))}
       </ul>
-      <Button className="button-gradient w-full">
+      <a
+        href="https://calendly.com/johnsmith1234234234/30min"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="button-gradient w-full inline-flex items-center justify-center h-11 rounded-full text-sm font-medium transition-all duration-200 ease-in-out bg-gradient-to-r from-primary to-[#5ba7ff] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/40"
+        style={{ minHeight: '2.75rem' }}
+      >
         Get Started
-      </Button>
+      </a>
     </div>
   </CardSpotlight>
 );
