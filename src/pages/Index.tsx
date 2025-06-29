@@ -75,13 +75,18 @@ const Index = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="relative mx-auto max-w-5xl mt-20"
+          className="relative mt-20 sm:-mx-4"
         >
-          <div className="glass rounded-xl overflow-hidden mx-auto">
+          <div className="glass rounded-xl overflow-hidden w-full sm:max-w-[1400px] sm:mx-auto">
+            <img
+              src="/lovable-uploads/HeroMobile.jpg"
+              alt="AI Content Creation Dashboard"
+              className="w-full h-auto block sm:hidden"
+            />
             <img
               src="/lovable-uploads/Hero.png"
               alt="AI Content Creation Dashboard"
-              className="w-full h-auto mx-auto"
+              className="w-full h-auto hidden sm:block"
             />
           </div>
         </motion.div>
@@ -148,9 +153,9 @@ const Index = () => {
             <div className="flex justify-center mb-6">
               <TrendingDown className="w-12 h-12 text-red-400" />
             </div>
-            <h3 className="text-xl font-medium mb-4">Amateur content kills your earnings</h3>
+            <h3 className="text-xl font-medium mb-4">Creating content for every platform is exhausting</h3>
             <p className="text-gray-400">
-              Photography skills vary wildly. Poor quality affects your bottom line.
+              Each platform needs different content styles. Creating multiple versions multiplies the workload.
             </p>
           </motion.div>
         </div>
@@ -167,9 +172,7 @@ const Index = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="text-center lg:text-left w-full">
             <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight">
-              Turn existing photos into
-              <br />
-              <span className="text-gradient font-medium">unlimited content</span>
+              Turn existing photos into <span className="text-gradient font-medium">unlimited content</span>
             </h2>
             <p className="text-lg text-gray-200 mb-8">
               Same faces, better results. Give your models the choice to focus on what they want.
@@ -184,7 +187,7 @@ const Index = () => {
               Get Free Consultation
             </a>
           </div>
-          <div className="rounded-xl overflow-hidden mx-auto w-full max-w-2xl">
+          <div className="rounded-xl overflow-hidden w-full sm:max-w-[1400px] sm:mx-auto lg:max-w-2xl lg:mx-auto">
             <img
               src="/lovable-uploads/Content Multiplier-mobile.jpg"
               alt="Content transformation example"
