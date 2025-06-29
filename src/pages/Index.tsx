@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, Zap, Users, Camera, Clock, CheckCircle, Lightbulb, Flame, TrendingDown } from "lucide-react";
+import { ArrowRight, Shield, Zap, Users, Camera, Clock, CheckCircle, Lightbulb, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import { FeaturesSection } from "@/components/features/FeaturesSection";
@@ -151,7 +151,44 @@ const Index = () => {
             className="glass rounded-xl p-8 text-center"
           >
             <div className="flex justify-center mb-6">
-              <TrendingDown className="w-12 h-12 text-red-400" />
+              {/* Copy/duplicate icon with 3 rectangular shapes */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                fill="none"
+                className="w-12 h-12"
+              >
+                <rect
+                  x="8"
+                  y="8"
+                  width="16"
+                  height="20"
+                  rx="2"
+                  stroke="#ff6b6b"
+                  strokeWidth="3.5"
+                  fill="none"
+                />
+                <rect
+                  x="18"
+                  y="14"
+                  width="16"
+                  height="20"
+                  rx="2"
+                  stroke="#ff6b6b"
+                  strokeWidth="3.5"
+                  fill="none"
+                />
+                <rect
+                  x="28"
+                  y="20"
+                  width="16"
+                  height="20"
+                  rx="2"
+                  stroke="#ff6b6b"
+                  strokeWidth="3.5"
+                  fill="none"
+                />
+              </svg>
             </div>
             <h3 className="text-xl font-medium mb-4">Creating content for every platform is exhausting</h3>
             <p className="text-gray-400">
