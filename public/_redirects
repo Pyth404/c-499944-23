@@ -1,3 +1,5 @@
 # Force HTTPS redirects
 http://venusstudio.ai/* https://venusstudio.ai/:splat 301!
 http://www.venusstudio.ai/* https://www.venusstudio.ai/:splat 301! 
+
+/*    /index.html   200 
