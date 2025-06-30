@@ -3,9 +3,10 @@ import { Zap, RefreshCw, Shield, Cog } from "lucide-react";
 export const services = [
   {
     title: "Content Repurposer",
-    description: "Turn your models' best content into new revenue streams. Build a new brand by applying fresh faces to proven high-performing content.",
+    description: "Transform existing content into fresh formats. Turn photos into videos, create variations, and maximize your content library.",
     icon: <RefreshCw className="w-6 h-6" />,
-    image: "/lovable-uploads/Content Repurposer.jpg"
+    image: "/lovable-uploads/Content Repurposer2.jpg",
+    badge: "New"
   },
   {
     title: "Content Multiplier",
