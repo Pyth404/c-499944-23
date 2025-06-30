@@ -58,16 +58,14 @@ const Index = () => {
               Get Free Consultation
             </a>
             <a
-              href="https://tally.so/r/3jrZXR"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/portfolio"
               className="inline-flex items-center justify-center h-11 px-8 rounded-full border border-white text-sm font-medium transition-all duration-200 ease-in-out bg-transparent hover:bg-white/10 active:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/40 ml-0 sm:ml-0"
               style={{ minHeight: '2.75rem' }}
               onMouseDown={e => e.currentTarget.style.transform = 'scale(0.98)'}
               onMouseUp={e => e.currentTarget.style.transform = 'scale(1)'}
               onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
             >
-              Contact Us
+              View Portfolio
             </a>
           </motion.div>
 
@@ -214,15 +212,24 @@ const Index = () => {
             <p className="text-lg text-gray-200 mb-8">
               Same faces, better results. Give your models the choice to focus on what they want.
             </p>
-            <a
-              href="https://calendly.com/johnsmith1234234234/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="button-gradient inline-flex items-center justify-center px-8 h-11 rounded-full text-sm font-medium transition-all duration-200 ease-in-out bg-gradient-to-r from-primary to-[#5ba7ff] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/40"
-              style={{ minHeight: '2.75rem' }}
-            >
-              Get Free Consultation
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 items-center justify-center lg:justify-start">
+              <a
+                href="https://calendly.com/johnsmith1234234234/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button-gradient inline-flex items-center justify-center px-8 h-11 rounded-full text-sm font-medium transition-all duration-200 ease-in-out bg-gradient-to-r from-primary to-[#5ba7ff] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/40"
+                style={{ minHeight: '2.75rem' }}
+              >
+                Get Free Consultation
+              </a>
+              <a
+                href="/portfolio"
+                className="inline-flex items-center justify-center h-11 px-8 rounded-full border border-white text-sm font-medium transition-all duration-200 ease-in-out bg-transparent hover:bg-white/10 active:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/40"
+                style={{ minHeight: '2.75rem' }}
+              >
+                View Portfolio
+              </a>
+            </div>
           </div>
           <div className="rounded-xl overflow-hidden w-full sm:max-w-[1400px] sm:mx-auto lg:max-w-2xl lg:mx-auto">
             <img

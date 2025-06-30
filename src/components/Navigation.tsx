@@ -42,21 +42,26 @@ const Navigation = () => {
   const navItems = [
     { name: "Services", href: "#services", onClick: () => scrollToSection('services') },
     { name: "Pricing", href: "#pricing", onClick: () => scrollToSection('pricing') },
-    { name: "FAQ", href: "#faq", onClick: () => scrollToSection('faq') },
+    { name: "Portfolio", href: "/portfolio", onClick: () => window.location.href = '/portfolio' },
   ];
 
   return (
     <header
       className={`fixed top-3.5 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 rounded-full ${
         isScrolled 
-          ? "h-14 bg-[#1B1B1B]/40 backdrop-blur-xl border border-white/10 scale-95 w-[85%] max-w-xl" 
-          : "h-14 bg-[#1B1B1B] w-[92%] max-w-2xl"
+          ? "h-14 bg-[#1B1B1B]/40 backdrop-blur-xl border border-white/10 scale-95 w-[75%] max-w-lg" 
+          : "h-14 bg-[#1B1B1B] w-[85%] max-w-2xl"
       }`}
     >
       <div className="mx-auto h-full px-6">
         <nav className="flex items-center justify-between h-full">
           <div className="flex items-center">
-            <span className="font-bold text-xl">Built for Venus</span>
+            <a
+              href="/"
+              className="font-bold text-xl cursor-pointer"
+            >
+              Venus
+            </a>
           </div>
 
           {/* Desktop Navigation */}
