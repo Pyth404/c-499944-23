@@ -63,14 +63,29 @@ const Portfolio = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="max-w-2xl mx-auto"
+            className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
           >
-            <div className="glass rounded-xl overflow-hidden relative group hover:scale-105 transition-transform duration-300 w-full">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
+            <div className="glass rounded-xl overflow-hidden w-full relative aspect-[4/5]">
               <img
-                src="/lovable-uploads/1RobinOriginal.jpg"
-                alt="Original Image"
-                className="w-full h-auto object-cover relative z-10"
+                src="/lovable-uploads/Original1.jpg"
+                alt="Original Image 1"
+                className="w-full h-full object-cover relative z-10"
+                loading="lazy"
+              />
+            </div>
+            <div className="glass rounded-xl overflow-hidden w-full relative aspect-[4/5]">
+              <img
+                src="/lovable-uploads/Original2.jpg"
+                alt="Original Image 2"
+                className="w-full h-full object-cover relative z-10"
+                loading="lazy"
+              />
+            </div>
+            <div className="glass rounded-xl overflow-hidden w-full relative aspect-[4/5]">
+              <img
+                src="/lovable-uploads/Original3.jpg"
+                alt="Original Image 3"
+                className="w-full h-full object-cover relative z-10"
                 loading="lazy"
               />
             </div>
@@ -78,103 +93,36 @@ const Portfolio = () => {
         </div>
       </motion.section>
 
-      {/* AI Generated Content Section */}
-      <motion.section 
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="py-24"
-      >
+      {/* AI Generated Content Section (matches landing page) */}
+      <section className="py-24">
         <div className="px-4 max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1, duration: 0.8 }}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">
               <span className="text-gradient font-medium">AI Generated Content</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Professional variations created by our AI system
             </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-          >
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
-                  className="glass rounded-xl overflow-hidden relative group hover:scale-105 transition-transform duration-300 w-full"
-                  style={{ opacity: 0, transform: 'translateY(20px)' }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent"></div>
-                  <img
-                    src={`/lovable-uploads/${index}.png`}
-                    alt={`AI Generated Content ${index}`}
-                    className="w-full h-auto object-cover relative z-10"
-                    loading="lazy"
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png","10.png"].map((filename, idx) => (
+              <div
+                key={filename}
+                className="glass rounded-xl overflow-hidden w-full relative aspect-[4/5]"
+              >
+                <img
+                  src={`/lovable-uploads/${filename}`}
+                  alt={`AI Generated Content ${filename}`}
+                  className="w-full h-full object-cover relative z-10"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      </motion.section>
-
-      {/* CTA Section */}
-      <motion.section 
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="container px-4 py-20 relative bg-black"
-      >
-        <div 
-          className="absolute inset-0 opacity-40"
-          style={{
-            background: 'linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(147, 51, 234, 0.1) 100%)',
-          }}
-        />
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="relative z-10 max-w-4xl mx-auto text-center"
-        >
-          <h2 className="text-4xl md:text-5xl font-normal mb-6">
-            Ready for results like these?
-          </h2>
-          <p className="text-lg text-gray-400 mb-8">
-            Chat with our team about your specific needs. Free consultation, no commitment.
-          </p>
-          <a
-            href="https://calendly.com/johnsmith1234234234/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="button-gradient inline-flex items-center justify-center px-8 h-11 rounded-full text-sm font-medium transition-all duration-200 ease-in-out bg-gradient-to-r from-primary to-[#5ba7ff] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/40"
-            style={{ minHeight: '2.75rem' }}
-          >
-            Get Free Consultation
-          </a>
-        </motion.div>
-      </motion.section>
-
-      <Footer />
+      </section>
     </div>
   );
 };
 
-export default Portfolio; 
+export default Portfolio;
