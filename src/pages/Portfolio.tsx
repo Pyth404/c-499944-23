@@ -63,11 +63,11 @@ const Portfolio = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto"
           >
             <div className="glass rounded-xl overflow-hidden w-full relative aspect-[4/5]">
               <img
-                src="/lovable-uploads/Original1.jpg"
+                src="/lovable-uploads/Original1-min.jpg"
                 alt="Original Image 1"
                 className="w-full h-full object-cover relative z-10"
                 loading="lazy"
@@ -75,7 +75,7 @@ const Portfolio = () => {
             </div>
             <div className="glass rounded-xl overflow-hidden w-full relative aspect-[4/5]">
               <img
-                src="/lovable-uploads/Original2.jpg"
+                src="/lovable-uploads/Original2-min.jpg"
                 alt="Original Image 2"
                 className="w-full h-full object-cover relative z-10"
                 loading="lazy"
@@ -83,7 +83,7 @@ const Portfolio = () => {
             </div>
             <div className="glass rounded-xl overflow-hidden w-full relative aspect-[4/5]">
               <img
-                src="/lovable-uploads/Original3.jpg"
+                src="/lovable-uploads/Original3-min.jpg"
                 alt="Original Image 3"
                 className="w-full h-full object-cover relative z-10"
                 loading="lazy"
