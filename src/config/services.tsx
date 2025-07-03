@@ -5,8 +5,7 @@ export const services = [
     title: "Content Repurposer",
     description: "Transform existing content into fresh formats. Turn photos into videos, create variations, and maximize your content library.",
     icon: <RefreshCw className="w-6 h-6" />,
-    image: "/lovable-uploads/Content Repurposer2.jpg",
-    badge: "New"
+    image: "/lovable-uploads/Content Repurposer3.jpg"
   },
   {
     title: "Content Multiplier",

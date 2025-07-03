@@ -5,24 +5,18 @@ import { CardSpotlight } from "./CardSpotlight";
 
 const PricingTier = ({
   name,
-  price,
   description,
   features,
   isPopular,
 }: {
   name: string;
-  price: string;
   description: string;
   features: string[];
   isPopular?: boolean;
 }) => (
   <CardSpotlight className={`h-full ${isPopular ? "border-white/10" : "border-white/10"} border-2`}>
     <div className="relative h-full p-6 flex flex-col">
-      <h3 className="text-xl font-medium mb-2">{name}</h3>
-      <div className="mb-4">
-        <span className="text-4xl font-bold">{price}</span>
-        {!price.includes("Custom") && <span className="text-gray-400">/image</span>}
-      </div>
+      <h3 className="text-xl font-bold mb-2">{name}</h3>
       <p className="text-gray-400 mb-6">{description}</p>
       <ul className="space-y-3 mb-8 flex-grow">
         {features.map((feature, index) => (
@@ -33,13 +27,13 @@ const PricingTier = ({
         ))}
       </ul>
       <a
-        href="https://calendly.com/johnsmith1234234234/30min"
+        href="https://tally.so/r/3jrZXR"
         target="_blank"
         rel="noopener noreferrer"
         className="button-gradient w-full inline-flex items-center justify-center h-11 rounded-full text-sm font-medium transition-all duration-200 ease-in-out bg-gradient-to-r from-primary to-[#5ba7ff] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/40"
         style={{ minHeight: '2.75rem' }}
       >
-        Get Started
+        Get in Contact
       </a>
     </div>
   </CardSpotlight>
@@ -71,8 +65,7 @@ export const PricingSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <PricingTier
           name="Social Media Images"
-          price="$8"
-          description="$30 setup fee per model"
+          description="$30 setup fee per model + monthly subscription"
           features={[
             "High-quality SFW images",
             "24-48 hour delivery",
@@ -81,8 +74,7 @@ export const PricingSection = () => {
         />
         <PricingTier
           name="Adult Images"
-          price="$16"
-          description="$30 setup fee per model"
+          description="$30 setup fee per model + monthly subscription"
           features={[
             "Premium NSFW images",
             "24-48 hour delivery",
@@ -92,8 +84,7 @@ export const PricingSection = () => {
         />
         <PricingTier
           name="Video Content"
-          price="Custom"
-          description="Custom setup fee"
+          description="Custom setup fee + monthly subscription"
           features={[
             "Professional video generation",
             "Custom timelines",

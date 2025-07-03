@@ -148,16 +148,16 @@ const Portfolio = () => {
             Ready to scale your agency's content?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Chat with our team about your specific needs. Free consultation, no commitment.
+            Get in contact with our team.
           </p>
           <a
-            href="https://calendly.com/johnsmith1234234234/30min"
+            href="https://tally.so/r/3jrZXR"
             target="_blank"
             rel="noopener noreferrer"
             className="button-gradient inline-flex items-center justify-center px-8 h-11 rounded-full text-sm font-medium transition-all duration-200 ease-in-out bg-gradient-to-r from-primary to-[#5ba7ff] hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-white/40"
             style={{ minHeight: '2.75rem' }}
           >
-            Get Free Consultation
+            Get in Contact
           </a>
         </motion.div>
       </motion.section>
