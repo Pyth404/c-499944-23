@@ -65,7 +65,7 @@ export const PricingSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         <PricingTier
           name="Social Media Images"
-          description="$30 setup fee per model + monthly subscription"
+          description="$70 setup fee per model + monthly subscription"
           features={[
             "High-quality SFW images",
             "24-48 hour delivery",
@@ -74,7 +74,7 @@ export const PricingSection = () => {
         />
         <PricingTier
           name="Adult Images"
-          description="$30 setup fee per model + monthly subscription"
+          description="$70 setup fee per model + monthly subscription"
           features={[
             "Premium NSFW images",
             "24-48 hour delivery",
